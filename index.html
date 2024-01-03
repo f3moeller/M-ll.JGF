@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mülltrennung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body > 
+    <div id="Background"><img src="./assets/backgroundimage/Bildschirmfoto 2024-01-03 um 12.29.50.png" alt=""></div>
+    <div class="Trash" style="bottom: 14vh ; left: 45vw; border-radius: 100%; filter: brightness(170%); " id="Trash1"><img style="border-radius: 100%;" src="./assets/Livelostfile/Bildschirmfoto_2024-01-03_um_13.36.51-removebg-preview.png" alt=""></div>
+
+    <div class="Trash" style="bottom: 13vh ; left: 15vw;" id="Trash2"><img src="./assets/Livelostfile/Bildschirmfoto_2024-01-03_um_13.36.58-removebg-preview.png" alt=""></div>
+    <div class="Trash" style="bottom: 13vh ; left: 80vw;" id="Trash3"><img src="./assets/Livelostfile/Bildschirmfoto_2024-01-03_um_13.37.10-removebg-preview.png" alt=""></div>
+
+
+    
+    <img id="Tier1" style="width: 120px; height: 120px; bottom: 27vh;position: absolute; display: none;" src="./assets/PunkteBilder/1-removebg-preview.png" alt="">
+    <img id="Tier2" style="width: 120px; height: 120px; bottom: 20vh;left: 60vw;  position: absolute; display: none;" src="./assets/PunkteBilder/2-removebg-preview.png" alt="">
+    <img id="Tier3" style="width: 120px; height: 120px; right: 9vw; position: absolute; filter: brightness(50%); display: none;" src="./assets/PunkteBilder/3-removebg-preview.png" alt="">
+    <img id="Tier4" style="width: 220px; height: 220px; bottom: 10vh;left: 22vw; position: absolute; display: none;" src="./assets/PunkteBilder/4-removebg-preview.png" alt="">
+    <img id="Tier5" style="width: 220px; height: 220px; bottom: 6vh;right: -2vw; position: absolute; display: none;" src="./assets/PunkteBilder/5-removebg-preview.png" alt="">
+
+<div id="GameStart"><h6>Oh nein die Mengen an Müll haben die Tiere aus dem Wald vertrieben, vielleicht kommen sie zurück, wenn wir ihn auffangen und wegschmeißen!</h6>
+    <h3>Zieh den Müll in die Richtige Mülltonne!</h3></div>
+
+    <div style="display: flex; width: 100vw; justify-content: space-around;"><div id="punkte"></div></div>
+
+ <div class="draggable Brown" id="Eggshell" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Egg.png" alt=""></div></div>
+    <div class="draggable Grey" id="Tshirt" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Shirt.png" alt=""></div></div>
+    <div class="draggable Grey" id="Glue" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Glue.png" alt=""></div></div>
+    <div class="draggable Brown" id="Banana" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Banana.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Chipsbag" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Chips.png" alt=""></div></div>
+    <div class="draggable Grey" id="Diapers" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Diaper.png" alt=""></div></div>
+    <div class="draggable Brown" id="potatopeal" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Potato.png" alt=""></div></div>
+    <div class="draggable Green" id="Box" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Box.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Plasticbottle" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Bottle.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Plasticbag" style="opacity: 1;" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Bag.png" alt=""></div></div>
+    <div class="draggable Brown" id="flower" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/flower.png" alt=""></div></div>
+    <div class="draggable Brown" id="applepit" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Apple.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Honeyglass" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/honey.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Shampoobottle" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/shampoo.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Glassbottle" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/glassbottle.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Tincan" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/tincan.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Milkcarton" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/milk.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Sodacan" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/can.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Jogurtcup" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/jogurt.png" alt=""></div></div>
+    <div class="draggable Yellow" id="Spraydose" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Dea.png" alt=""></div></div>
+    <div class="draggable Yellow" id="LaundryDetergent" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/LaundryStuff.png" alt=""></div></div>
+    <div class="draggable Green" id="NewsPaper" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Newspaper.png" alt=""></div></div>
+    <div class="draggable Green" id="Letter" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/letter.png" alt=""></div></div>
+    <div class="draggable Green" id="Eggcarton" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/eggkarton.png" alt=""></div></div>
+    <div class="draggable Green" id="Folder" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/heft.png" alt=""></div></div>
+    <div class="draggable Green" id="Postits" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Postits.png" alt=""></div></div>
+    <div class="draggable Grey" id="Lightbulb" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Bulb.png" alt=""></div></div>
+    <div class="draggable Grey" id="Toothpaste" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Toothbrush.png" alt=""></div></div>
+    <div class="draggable Grey" id="Teapot" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/teapot.png" alt=""></div></div>
+    <div class="draggable Grey" id="Paint" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/paint.png" alt=""></div></div>
+    <div class="draggable Grey" id="Teddy" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/teddy.png" alt=""></div></div>
+    <div class="draggable Grey" id="Pencil" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/pencil.png" alt=""></div></div>
+    <div class="draggable pink" id="Laptop" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/Laptop.png" alt=""></div></div>
+    <div class="draggable pink" id="Batterie" draggable="true" ondrag="drag(event)"><div><img draggable="false" src="./assets/img/batterie.png" alt=""></div></div>
+    
+<div class="bottomPosition" ondragover="allowDrop(event)">
+
+<div class="container" ondragover="allowDrop(event)">
+    <div class="Trashbin" id="pink" ondragover="allowDrop(event)" ondrop="drop(event)"><img src="./assets/img2/Blau.png" alt=""></div>
+    <div class="Trashbin" id="green" ondragover="allowDrop(event)" ondrop="drop(event)"><img src="./assets/img2/Grün.png" alt=""></div>
+    <div class="Trashbin" id="grey" ondragover="allowDrop(event)" ondrop="drop(event)"><img src="./assets/img2/Grau.png" alt=""></div>
+    <div class="Trashbin" id="yellow" ondragover="allowDrop(event)" ondrop="drop(event)"><img src="./assets/img2/Gelb.png " alt=""></div>
+    <div class="Trashbin" id="brown"  ondragover="allowDrop(event)" ondrop="drop(event)"><img src="./assets/img2/rot.png " alt=""></div>
+</div>
+</div>
+   
+<script src="main.js"></script>
+</body>
+</html>
